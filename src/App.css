@@ -1,38 +1,322 @@
-.App {
+*{
+  margin:0;
+  padding:20;
+  text-decoration: none;
+}
+
+.head{
+  display:flex;
+  margin-left: 0px;
+  height: 100px;
+}
+.headtext{
+  background-color: rgb(0, 0, 0);
+  text-wrap: wrap;
+  color: #fff;
   text-align: center;
+  font-size:x-large;
+  font-weight: 800;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+main{
+  width: 100%;
+  padding: 20px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sidebar{
+  background: #023237;
+  color: #fff;
+  height: 200vh;
+  width: 160px;
+  transition: all 0.5s;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.top_section{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  align-items:center;
+  padding:10px 15px;
+}
+.logo{
+  width: 60px;
+  border-radius: 50px;
+}
+.bars{
+  display: flex;
+  font-size: 25px;
+  margin-left: 50px;
+}
+.link{
+  text-decoration: none;
+  display: flex;
+  color: hsl(0, 0%, 100%);
+  padding: 10px 15px;
+  gap: 15px;
+  transition: all 0.5s;
+}
+.link:hover{
+  background:rgb(147, 223, 235);
+  color: #000;
+  transition: all 0.5s;
+}
+.active{
+  background: rgb(255, 255, 255);
+  color: #000;
+}
+.icon, .link_text{
+  font-size: 20px;
+  text-decoration: none;
+}
+.header{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background-color: #000;
+  height: 100px;
+}
+.header>img{
+  margin-left: 0px;
+  width:50px;
+  border-radius: 50px;
+}
+.header>p{
+  text-wrap: wrap;
+  color: #fff;
+  text-align: center;
+  font-size:x-large;
+  font-weight: 800;
 }
 
-.App-link {
-  color: #61dafb;
+
+/* Registration.css */
+
+.registration-form {
+  max-width: 400px;
+  margin: 10px auto;
+  padding: 20px;
+  background-color: #dee0ee;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.registration-form h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #0073e6;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button[type="submit"]:hover {
+  background-color: #005bbf;
+}
+
+/* Add styles for validation messages if needed */
+
+
+/* Login.css (You can create a separate CSS file or add these styles to your existing CSS file) */
+
+.login-form {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #cbe6d8;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.login-form h2 {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.alert {
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  border-radius: 3px;
+}
+
+.alert-success {
+  background-color: #dff0d8;
+  color: #3c763d;
+  border: 1px solid #d6e9c6;
+}
+
+.vertical-rectangle {
+  width: 20px; /* Adjust the width as needed */
+  height: 80px; /* Adjust the height as needed */
+  background-color: #ff00d0; /* Set the background color */
+  margin: 0 10px; /* Adjust the margin as needed */
+}
+
+.login-button {
+  background-color: #7e0e48; /* Button background color */
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 50px;
+  margin-right: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.login-button:hover {
+  background-color: #eb65b7; /* Hover background color */
+}
+
+.register-button {
+  background-color: #7e0e48; /* Button background color */
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-right: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.register-button:hover {
+  background-color: #eb65b7; /* Hover background color */
+}
+
+.start-button {
+  background-color: #000000; /* Button background color */
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-right: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.start-button:hover {
+  background-color: #65afeb; /* Hover background color */
+}
+
+/* styles.css */
+
+.parking-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0;
+  font-family: Arial, sans-serif;
+  border: 1px solid #ddd;
+}
+
+.parking-table th, .parking-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.parking-table th {
+  background-color: #f2f2f2;
+}
+
+.parking-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.parking-table tr:hover {
+  background-color: #ddd;
+}
+/* reservation.css */
+
+/* Style the table header */
+.table thead th {
+  background-color: #007bff; /* Blue background color for header */
+  color: #fff; /* White text color for header */
+}
+
+/* Style the table rows */
+.table tbody tr:hover {
+  background-color: #f5f5f5; /* Light gray background on hover */
+}
+
+/* Style the table cells */
+.table tbody td {
+  border-color: #dee2e6; /* Gray border color for cells */
+}
+
+/* Style the "Find Spot" button */
+.btn-primary {
+  background-color: #007bff; /* Blue background color */
+  border-color: #007bff; /* Blue border color */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Darker blue background on hover */
+  border-color: #0056b3; /* Darker blue border on hover */
+  color: #fff; /* White text color on hover */
 }

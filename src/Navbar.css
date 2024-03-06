@@ -1,0 +1,119 @@
+.navbar {
+    background: linear-gradient(to bottom, #11c9c6, #f6f6f6);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    padding: 30px;
+    flex-wrap: wrap;
+    position: sticky;
+}
+
+/* Remove .footbar CSS for simplicity */
+
+/* Navbar menu items */
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Adjust .navbar-link styles to center them */
+.navbar-link {
+    text-decoration: none;
+    color: #000000;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.2s;
+}
+
+.navbar-link:hover {
+    color: #00bfff;
+}
+
+/* Add styles for .navbar-buttons */
+.navbar-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Push buttons to the right */
+}
+
+.navbar-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6c1341;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.navbar-button:hover {
+    background-color: #eb65b7;
+}
+
+/* Background image below Navbar */
+
+/* ...Previous Navbar styles... */
+
+
+/* ...Previous Navbar styles... */
+
+/* Background image below Navbar */
+.background-image {
+    background-image: url('./images/parking.jpg'); /* Background image URL */
+    background-size: cover; /* Ensure the background image covers the entire container */
+    min-height: 10cm; /* Adjust the height as needed */
+    max-height: 20cm;
+}
+
+/* About.css */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0; /* Set your desired background color */
+  }
+  
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    width: 70%; /* Adjust the width as needed */
+    padding: 10px;
+  }
+  
+  .about-text {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  
+  .about-image {
+    background-image: url('./images/about.png'); /* Set your image URL */
+    background-size: cover;
+    background-position: center;
+    width: 50%; /* Adjust the width as needed */
+    height: 400px; /* Adjust the height as needed */
+    border-radius: 5px; /* Add border-radius for rounded corners */
+  }
+  .navbar-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Customize the button color */
+    color: #fff; /* Text color */
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners */
+    margin-right: 10px; /* Adjust spacing between buttons */
+}
+
+.navbar-button:hover {
+    background-color: #0056b3; /* Change color on hover */
+}
